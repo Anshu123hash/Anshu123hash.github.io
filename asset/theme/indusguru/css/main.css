@@ -1669,6 +1669,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-top: 0;
     margin-bottom: 1.2rem;
     margin-left: 6px;
+    background-color: #000000ab;
+}
+.home-content h2{
+    background-color: #000000ab;
 }
 
 .home-content h1 {
@@ -1677,6 +1681,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
+    background-color: #000000ab;
 }
 
 .home-content__main {
@@ -2063,8 +2068,8 @@ html.cl-loaded .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 16.2rem;
-    padding-bottom: 9rem;
+    padding-top: 8.2rem;
+    padding-bottom: 8rem;
     background-color: #399cbd;
     color: #010507;
     position: relative;
@@ -2181,7 +2186,7 @@ html.cl-loaded .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .s-about {
-        padding-top: 12rem;
+        padding-top: 3rem;
     }
     .about-desc {
         font-size: 1.9rem;
@@ -2233,8 +2238,8 @@ html.cl-loaded .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    padding-top: 16.2rem;
-    padding-bottom: 13.2rem;
+    padding-top: 8.2rem;
+    padding-bottom: 8.2rem;
     background-color: #FFFFFF;
     color: #757575;
     position: relative;
@@ -2329,7 +2334,10 @@ html.cl-loaded .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .s-services {
-        padding-top: 12rem;
+        padding-top: 6rem;
+    }
+    .trusted-by{
+        padding-top:3rem !important;
     }
     .services-list .service-item:nth-child(n) {
         padding-right: 10px;
@@ -2595,12 +2603,14 @@ html.cl-loaded .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-clients {
-    padding-top: 10.2rem;
+    padding-top: 4.2rem;
     /* padding-bottom: 16.8rem; */
-    background-color: #e6e6e6;
+    /* background-color: #e6e6e6; */
     color: #757575;
     position: relative;
+    margin-bottom:100px;
 }
+
 
 
 /* ------------------------------------------------------------------- 
@@ -2631,7 +2641,7 @@ html.cl-loaded .home-content__main {
  * ------------------------------------------------------------------- */
 .clients-testimonials {
     margin-top: 4.2rem;
-    padding-top: 7.2rem;
+    /* padding-top: 7.2rem; */
     text-align: center;
     position: relative;
 }
@@ -2860,7 +2870,8 @@ html.cl-loaded .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .s-clients {
-        padding-top: 12rem;
+        padding-top: 3rem;
+
     }
     .clients-testimonials::before {
         width: 250px;
@@ -2885,14 +2896,14 @@ html.cl-loaded .home-content__main {
 
 .our-domains{
     background-color: #399cbd;
-    padding-top: 15rem;
+    padding-top: 8rem;
     padding-bottom: 12rem;
     position: relative;
 
 }
 .trusted-by{
     background-color: white;
-    padding-top: 15rem;
+    padding-top: 8rem;
     padding-bottom: 12rem;
     position: relative;
 
@@ -10272,3 +10283,20 @@ div.dataTables_wrapper div.dataTables_processing {
         display: none;
     }
 }
+
+
+#contactName::placeholder { /* Most modern browsers support this now. */
+    color:    white;
+ }
+
+#contactEmail::placeholder { /* Most modern browsers support this now. */
+    color:    white;
+ }
+
+#contactSubject::placeholder { /* Most modern browsers support this now. */
+    color:    white;
+ }
+
+#contactMessage::placeholder { /* Most modern browsers support this now. */
+    color:    white;
+ }

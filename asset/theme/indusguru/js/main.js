@@ -289,7 +289,7 @@
         
         $('.testimonials').slick({
             arrows: true,
-            dots: false,
+            dots: true,
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
