@@ -1115,7 +1115,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         font-size: 1.5rem;
     }
     .card{
-        height:460px !important;
+        height:440px !important;
     }
 }
 
