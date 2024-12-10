@@ -1693,6 +1693,28 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding-top: 6rem;
     text-align: left;
 }
+.home-content__buttons2 {
+    /* padding-top: 6rem; */
+    text-align: right;
+    margin-right: 130px;
+    top: -75px;
+    position: relative;
+}
+.home-content__buttons2 .btn {
+    width: 135px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin: 1.5rem 1.5rem 0 0;
+    letter-spacing: .25rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.home-content__buttons2 .btn:hover, 
+.home-content__buttons2 .btn:focus {
+    background: #FFFFFF !important;
+    color: #000000;
+}
+
 
 .home-content__buttons .btn {
     width: 215px;
