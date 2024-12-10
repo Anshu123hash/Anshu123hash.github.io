@@ -59,14 +59,14 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-    margin-top: 1rem;
-    margin-bottom: 1.8rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 0.2rem;
 }
 
 @media only screen and (max-width: 600px) {
-    h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    /* h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
         margin-top: 5.1rem;
-    }
+    } */
 }
 
 h5, .h5, h6, .h6 {
@@ -413,9 +413,9 @@ ol,
 dl,
 form,
 .video-container,
-.cl-custom-select {
+/* .cl-custom-select {
     margin-bottom: 3rem;
-}
+} */
 
 
 /* ------------------------------------------------------------------- 
@@ -1114,9 +1114,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     .subhead {
         font-size: 1.5rem;
     }
-    .card{
+    /* .card{
         height:440px !important;
-    }
+    } */
 }
 
 @media only screen and (max-width: 400px) {
@@ -1252,7 +1252,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: #39b54a;
+    background: #399cbd;
 }
 
 
@@ -1637,14 +1637,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* z-index: -1; Places the video behind the content */
+    
+    
 }
 
 
 .card{
     margin-top: 30px;
     position: relative;
-    height: 400px;
+    height: 350px;
     background: #FFFFFF;
     border-radius: 8px;
     border: 1px solid #E4E4E4;
@@ -1672,7 +1673,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background-color: #000000ab;
 }
 .home-content h2{
-    background-color: #000000ab;
+    background-color: #00000054;
+    
 }
 
 .home-content h1 {
@@ -1681,7 +1683,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
-    background-color: #000000ab;
+    background-color: #00000054;
 }
 
 .home-content__main {
@@ -2066,9 +2068,26 @@ html.cl-loaded .home-content__main {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
     .home-content h1 {
-        font-size: 3.3rem;
+        font-size: 2.8rem;
+        margin-top: 170px;
+    }
+    .home-content h2{
+        font-size:2.4rem;
+    }
+    .home-content__buttons2 .btn {
+        width: 105px;
+        border-color: #FFFFFF;
+        color: #FFFFFF;
+        margin: 6.5rem 3.6rem 0 0;
+        letter-spacing: .25rem;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        background-color: black !important;
+        position: fixed;
+        right: 10px;
+        height: 45px;
     }
 }
 
@@ -2264,9 +2283,10 @@ html.cl-loaded .home-content__main {
 .s-services {
     padding-top: 8.2rem;
     padding-bottom: 8.2rem;
-    background-color: #FFFFFF;
+    background-color: #399cbd;
     color: #757575;
     position: relative;
+
 }
 
 
@@ -2633,6 +2653,21 @@ html.cl-loaded .home-content__main {
     color: #757575;
     position: relative;
     margin-bottom:100px;
+}
+.cl-testi{
+    padding-top: 4.2rem;
+    position: relative;
+    margin-bottom:100px;
+    background-color:#399cbd;
+}
+
+
+.co-testi{
+    padding-top: 4.2rem;
+    position: relative;
+    margin-bottom:100px;
+    background-color:#399cbd;
+
 }
 
 
@@ -10306,6 +10341,9 @@ div.dataTables_wrapper div.dataTables_processing {
     .custom-carousel-prev, .custom-carousel-next {
         display: none;
     }
+    .mantra .card{
+        height:380px !important;
+    }
 }
 
 
@@ -10324,3 +10362,7 @@ div.dataTables_wrapper div.dataTables_processing {
 #contactMessage::placeholder { /* Most modern browsers support this now. */
     color:    white;
  }
+
+.mantra .card{
+    height:430px;
+}
