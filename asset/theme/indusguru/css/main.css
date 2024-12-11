@@ -1189,13 +1189,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .section-header.has-bottom-sep {
         padding-bottom: 0;
     }
     .section-header.has-bottom-sep::before {
         width: 250px;
     }
+    .s-header{
+        position:fixed;
+        z-index:1;
+    }
+
 
 }
 
@@ -1264,10 +1269,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .s-header {
     width: 100%;
     height: 96px;
-    background-color: transparent;
+    background-color: white;
     position: absolute;
     top: 0;
     z-index: 500;
+    opacity:0.8;
+    position:fixed !important;
 }
 
 
@@ -1486,6 +1493,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     color: #399cbd;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    background-color: black !important;
 }
 
 .header-menu-toggle.opaque {
@@ -1507,6 +1515,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: -70px;
     width: 70px;
     padding-left: 12px;
+    color:white !important;
+    background-color: black !important;
 }
 
 .header-menu-icon {
@@ -1551,6 +1561,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 @media only screen and (max-width: 600px) {
     .s-header {
         height: 90px;
+        position:fixed !important;
     }
     .header-logo {
         left: 30px;
@@ -1696,11 +1707,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     text-align: left;
 }
 .home-content__buttons2 {
-    /* padding-top: 6rem; */
+    padding-top: 8rem;
     text-align: right;
     margin-right: 130px;
     top: -75px;
-    position: relative;
+    position: fixed !important;
+    right: 5rem;
+
 }
 .home-content__buttons2 .btn {
     width: 135px;
@@ -1710,7 +1723,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    background-color: #000000ab !important;
+    background-color: black !important;
+    border-radius:5%;
 }
 .home-content__buttons2 .btn:hover, 
 .home-content__buttons2 .btn:focus {
@@ -2071,6 +2085,7 @@ html.cl-loaded .home-content__main {
 @media only screen and (max-width: 768px) {
     .home-content h1 {
         font-size: 2.8rem;
+        margin-top:-30px;
         
     }
     .home-content h2{
@@ -2080,13 +2095,13 @@ html.cl-loaded .home-content__main {
         width: 105px;
         border-color: #FFFFFF;
         color: #FFFFFF;
-        margin: 1.3rem 3.6rem 0 0;
+        margin: 1.85rem 3.6rem 0 0;
         letter-spacing: .25rem;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
         background-color: black !important;
         position: fixed;
-        right: 40px;
+        right: 50px;
         height: 45px;
     }
 }
@@ -2837,13 +2852,13 @@ html.cl-loaded .home-content__main {
 }
 
 .clients-testimonials .clients2 .slick-prev {
-    left: -130px;
+    left: -80px;
     color: white;
     background-image: url("https://st2.depositphotos.com/5266903/8456/v/950/depositphotos_84564784-stock-illustration-arrow-left-flat-white-color.jpg");
 }
 
 .clients-testimonials .clients2 .slick-next {
-    right: -130px;
+    right: -80px;
     color: white;
     background-image: url("https://st2.depositphotos.com/5266903/8456/v/450/depositphotos_84564790-stock-illustration-arrow-right-flat-white-color.jpg");
 }
@@ -2915,7 +2930,7 @@ html.cl-loaded .home-content__main {
         
     }
     .clients-testimonials .clients2 .slick-arrow {
-        top: auto;
+        top: 330px;
         bottom: 3rem;
         display:inline !important;
     }
