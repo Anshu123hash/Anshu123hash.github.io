@@ -1567,7 +1567,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         left: 30px;
     }
     .header-menu-toggle {
-        right: 25px;
+        right: 1px;
     }
 }
 
@@ -2085,7 +2085,7 @@ html.cl-loaded .home-content__main {
 @media only screen and (max-width: 768px) {
     .home-content h1 {
         font-size: 2.8rem;
-        margin-top:-30px;
+        margin-top:50px;
         
     }
     .home-content h2{
@@ -2095,7 +2095,7 @@ html.cl-loaded .home-content__main {
         width: 105px;
         border-color: #FFFFFF;
         color: #FFFFFF;
-        margin: 1.85rem 3.6rem 0 0;
+        margin: 2.4rem 1.2rem 0 0;
         letter-spacing: .25rem;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
@@ -10082,7 +10082,7 @@ div.dataTables_wrapper div.dataTables_processing {
     z-index: 10; /* Keeps it above the image */
     border:none;
 
-    margin-left:210px
+    margin-left:140px;
 }
 /* Default style for the button */
 .read-more {
