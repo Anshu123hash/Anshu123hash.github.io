@@ -1563,6 +1563,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         height: 90px;
         position:fixed !important;
     }
+    .top_header_logo{
+        top:0px;
+    }
     .header-logo {
         left: 30px;
     }
@@ -1706,6 +1709,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding-top: 6rem;
     text-align: left;
 }
+.home-content__buttons3 {
+    padding-top: 6rem;
+}
 .home-content__buttons2 {
     padding-top: 8rem;
     text-align: right;
@@ -1742,6 +1748,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     background-color: #000000ab !important;
+}
+.home-content__buttons3 .btn {
+    width: 215px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin: 1.5rem 1.5rem 0 0;
+    letter-spacing: .25rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: #000000 !important;
 }
 
 .home-content__buttons .btn:last-child {
@@ -2014,6 +2030,14 @@ html.cl-loaded .home-content__main {
     .home-content__buttons {
         padding-top: 1.2rem;
         text-align: center;
+    }
+    .home-content__buttons3{
+        padding-bottom:20px !important;
+        padding-top:20px !important;
+        padding-left:3px;
+    }
+    .home-content__buttons3 .btn{
+        width:188px;
     }
     .home-content__buttons .btn {
         display: block;
@@ -2672,18 +2696,48 @@ html.cl-loaded .home-content__main {
 .cl-testi{
     padding-top: 4.2rem;
     position: relative;
-    margin-bottom:100px;
-    background-color:#399cbd;
+    height:800px;
+    background-color:black;
 }
 
 
 .co-testi{
     padding-top: 4.2rem;
     position: relative;
-    margin-bottom:100px;
+    height:800px;
     background-color:#399cbd;
 
 }
+.clients-section22 {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .clients-section22 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .clients-slider22 {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .slide22 {
+    min-width: 200px;
+    height: 100px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
 
 
 
@@ -2818,12 +2872,12 @@ html.cl-loaded .home-content__main {
 
 .clients-testimonials .testimonials .slick-prev {
     left: -130px;
-    background-image: url("../../../../images/left-arrow.png.webp");
+    background-image: url("https://st2.depositphotos.com/5266903/8456/v/950/depositphotos_84564784-stock-illustration-arrow-left-flat-white-color.jpg");
 }
 
 .clients-testimonials .testimonials .slick-next {
     right: -130px;
-    background-image: url("../../../../images/right-arrow.png.webp");
+    background-image: url("https://st2.depositphotos.com/5266903/8456/v/450/depositphotos_84564790-stock-illustration-arrow-right-flat-white-color.jpg");
 }
 
 .clients-testimonials .testimonials .slick-dots {
