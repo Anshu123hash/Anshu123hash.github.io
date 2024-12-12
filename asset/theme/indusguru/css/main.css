@@ -1732,6 +1732,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background-color: black !important;
     border-radius:5%;
     height:46px;
+    display: flex;
+    align-items: center;
 }
 .home-content__buttons2 .btn:hover, 
 .home-content__buttons2 .btn:focus {
@@ -2038,7 +2040,7 @@ html.cl-loaded .home-content__main {
         padding-left:3px;
     }
     .home-content__buttons3 .btn{
-        width:188px;
+        width:160px;
     }
     .home-content__buttons .btn {
         display: block;
