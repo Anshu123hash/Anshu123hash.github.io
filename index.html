@@ -825,18 +825,19 @@
     </section>
     <section>
         <h2 class="display-2 text-center mt-4"   >Trusted By</h2>
-                    <div class="container-fluid clients-section22">
-                        
-                        <div class="clients-slider22">
-                          <div class="slide22">Placeholder 1</div>
-                          <div class="slide22">Placeholder 2</div>
-                          <div class="slide22">Placeholder 3</div>
-                          <div class="slide22">Placeholder 4</div>
-                          <div class="slide22">Placeholder 5</div>
-                          <div class="slide22">Placeholder 6</div>
-                          <div class="slide22">Placeholder 7</div>
-                        </div>
-                    </div>
+        <h4 class="text-center" style="padding:15px;">Large Coorporates| Consulting Firms | PE & VC Firms | SMEs | Startups <br> | Non-Profits </h4>
+        <div class="container-fluid clients-section22">
+            
+            <div class="clients-slider22">
+                <div class="slide22"><img src="image1.jpg" alt="Client 1"></div>
+                <div class="slide22"><img src="image1.jpg" alt="Client 2"></div>
+                <div class="slide22"><img src="image1.jpg" alt="Client 3"></div>
+                <div class="slide22"><img src="image1.jpg" alt="Client 4"></div>
+                <div class="slide22"><img src="image1.jpg" alt="Client 5"></div>
+                <div class="slide22"><img src="image1.jpg" alt="Client 6"></div>
+                <div class="slide22"><img src="image1.jpg" alt="Client 7"></div>
+            </div>
+        </div>
     </section>
     <!-- <section class="trusted-by">
         <div class="trustedBy">
@@ -1091,6 +1092,55 @@
             </div>
         </div>
     </section>
+    <section class="scrollable-cards-section">
+        <div class="cards-container">
+          <div class="scrollable-card">
+            <img src="https://www.indusguru.in/images/testimonials/bajaj_process_limited_logo_mobi.png" alt="Image 1">
+            <h3><span class="font-weight-bold">Highly Proficient and Professional services</span></h3>
+            <div class="scrollable-text">
+              <p>IndusGuru's services of identifying and linking the right set of experienced consultants and advisory professionals serve a very important missing link to companies like ours in the SME sector. Professionals, provided by IndusGuru, with a rich background and experience,  help overcome the various challenges that are common to growing and emerging companies.            </p>
+
+
+               
+            </div>
+            <p>- Girissh Bajaj - Managing Director - Bajaj Processpack Limited<p>
+          </div>
+          <div class="scrollable-card">
+            <img src="https://www.indusguru.in/images/testimonials/karan_aggarwal_eversprint_mobi.png" alt="Image 2">
+            <h3><span class="font-weight-bold">Transparent, Efficient, Professional And Highly Responsive</span></h3>
+            <div class="scrollable-text">
+              <p>IndusGuru did a great job of accurately understanding my requirements. They are transparent, efficient, professional and highly responsive.  Most importantly, they helped me connect with an excellent consultant with a huge amount of relevant industry knowledge.  </p>
+            </div>
+            <p>- Karan Aggarwal<p>
+          </div>
+          
+          <div class="scrollable-card">
+            <img src="https://www.indusguru.in/images/testimonials/241626848121_avatart.jpg" alt="Image 3">
+            <h3>Always Willing To Go That Extra-mile To Meet Our Requirements</h3>
+            <div class="scrollable-text">
+              <p>Its been a pleasure engaging with IndusGuru. They have introduced and helped us source senior professionals for a range of expertise areas relevant to a growing entrepreneurial business - including Digital Marketing, HR, Branding and Operations. IndusGuru is run by a small but dedicated team, who bring a personal touch to all their interactions and are always willing to go that extra-mile to meet our requirements.        </p>
+            </div>
+            <p>- Neha Jhunjhunwala, DIrector - Sarla Performance Fibres<p>
+          </div>
+          <div class="scrollable-card">
+            <img src="https://www.indusguru.in/images/testimonials/theorem_india.png" alt="Image 4">
+            <h3>Fantastic Engagement & Training</h3>
+            <div class="scrollable-text">
+              <p>Thank you for organizing this training. Qur experience of working with IndusGuru on this engagement has been fantastic and we look forward to work with you in the future.</p>
+            </div>
+            <p>- Neha Jhunjhunwala, DIrector - Sarla Performance Fibres<p>
+          </div>
+          <div class="scrollable-card">
+            <img src="image5.jpg" alt="Image 5">
+            <h3>Card Title 5</h3>
+            <div class="scrollable-text">
+              <p>Content for the fifth card. Make sure this text demonstrates vertical scrolling.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+      
+      
     <section id="clients" class="co-testi" data-aos="fade-up">
         <h3 class="display-2 display-2--light text-center">Consultant Testimonials</h3>
         <div class="row clients-testimonials">
@@ -1333,23 +1383,25 @@
                                     Blog
                                 </a>
                             </li>
-                            
-                            <li>
-                                <a href="{{ url('sitemap') }}" title="SiteMap" target="_blank">
-                                    Site Map
-                                </a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col">
-                        <ul>
-                            
                             <li>
                                 <a href="{{ url('tnc/consultant') }}" title="Terms for Consultant" target="_blank">
                                     Terms for Consultant
                                 </a>
                             </li>
+                            
+
+                           
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col">
+                        <ul>
+                            <li>
+                                <a href="{{ url('sitemap') }}" title="SiteMap" target="_blank">
+                                    Site Map
+                                </a>
+                            </li>
+                            
+
                             <li>
                                 <a href="{{ url('tnc/client') }}" title="Terms for Client" target="_blank">
                                     Terms for Client
@@ -1805,6 +1857,23 @@
 
 
     </script>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector(".cards-container");
+        let scrollPosition = 0;
+        const cardWidth = document.querySelector(".scrollable-card").offsetWidth + 20; // Width + gap
+
+        setInterval(() => {
+            scrollPosition += cardWidth; // Scroll by the width of one card
+            if (scrollPosition >= container.scrollWidth - container.offsetWidth) {
+            scrollPosition = 0; // Reset to the start
+            }
+            container.scrollTo({ left: scrollPosition, behavior: "smooth" });
+        }, 3000); // Change slides every 3 seconds
+        });
+
+
+    </script> -->
 
 </body>
 

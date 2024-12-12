@@ -689,7 +689,7 @@ input[type="reset"],
 input[type="button"] {
     display: inline-block;
     font-family: "montserrat-medium", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
     height: 5.4rem;
@@ -1722,15 +1722,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 }
 .home-content__buttons2 .btn {
-    width: 135px;
+    width: 115px;
     border-color: #FFFFFF;
     color: #FFFFFF;
-    margin: 1.5rem 1.5rem 0 0;
+    margin: 1.7rem 1.5rem 0 0;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     background-color: black !important;
     border-radius:5%;
+    height:46px;
 }
 .home-content__buttons2 .btn:hover, 
 .home-content__buttons2 .btn:focus {
@@ -10452,3 +10453,90 @@ div.dataTables_wrapper div.dataTables_processing {
 .mantra .card{
     height:430px;
 }
+
+.scrollable-cards-section {
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+  }
+  .cards-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .scrollable-card {
+    flex: 0 0 80%;
+    max-width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    text-align: center;
+    height: 500px;
+  }
+  
+  .scrollable-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .scrollable-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .scrollable-text {
+    height: 250px;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+  
+  .scrollable-text p {
+    margin: 0;
+    color: #555;
+  }
+
+  @media screen and (max-width: 768px) {
+    .scrollable-cards-section {
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+  
+    .cards-container {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 10px;
+    }
+  
+    .scrollable-card {
+      flex: 0 0 80%; /* Show one card fully and a part of the next */
+      max-width: 80%;
+    }
+  
+    .scroll-indicator {
+      margin-top: 10px;
+    }
+  }
+  
+  
