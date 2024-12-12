@@ -115,8 +115,10 @@
     .s-header{
         height: unset;
         z-index:1;
-        /* width: 90% !important; */
+        width: 95% !important;
         position: fixed !important;
+        border-radius: 10px;
+    margin: 10px;
     }
 
 
@@ -136,7 +138,7 @@
         left: 30px;
     }
     .header-menu-toggle {
-        right: 1px;
+        right: 7px;
     }
 }
 
@@ -317,7 +319,8 @@
     }
 
     .header-menu-toggle{
-        top: 16px !important;
+        top: 27px !important;
+        height: 40px !important;
     }
 }
 
