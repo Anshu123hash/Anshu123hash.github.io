@@ -413,9 +413,9 @@ ol,
 dl,
 form,
 .video-container,
-/* .cl-custom-select {
+.cl-custom-select {
     margin-bottom: 3rem;
-} */
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -10540,5 +10540,12 @@ div.dataTables_wrapper div.dataTables_processing {
       margin-top: 10px;
     }
   }
-  
+
+  footer .row{
+    max-width: unset;
+  }
+
+  footer .row .socialLinks a{
+    margin-left:unset !important ;
+  }
   
