@@ -1920,8 +1920,8 @@ html.cl-loaded .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    padding-top: 8.2rem;
-    padding-bottom: 8.2rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
     background-color: #399cbd;
     color: #757575;
     position: relative;
@@ -2200,11 +2200,6 @@ html.cl-loaded .home-content__main {
     background-color:#399cbd;
 
 }
-.clients-section22 {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-  }
   
   .clients-section22 h2 {
     font-size: 24px;
@@ -2220,14 +2215,17 @@ html.cl-loaded .home-content__main {
   }
   
   .slide22 {
-    min-width: 200px;
     height: 100px;
-    background-color: #e0e0e0;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ccc;
     border-radius: 10px;
+    margin: 10px;
+  }
+  .slide22 img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
   }
   
 
@@ -2417,15 +2415,15 @@ html.cl-loaded .home-content__main {
 
 .our-domains{
     background-color: #399cbd;
-    padding-top: 8rem;
-    padding-bottom: 12rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
     position: relative;
 
 }
 .trusted-by{
     background-color: white;
-    padding-top: 8rem;
-    padding-bottom: 12rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
     position: relative;
 
 }
@@ -2460,8 +2458,8 @@ html.cl-loaded .home-content__main {
     background-image: url("../images/contact-bg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
-    padding-top: 15rem;
-    padding-bottom: 12rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
 }

@@ -486,6 +486,7 @@
 @media only screen and (max-width: 600px) {
     .s-services {
         padding-top: 6rem;
+        padding-bottom: 8rem;
     }
     .trusted-by{
         padding-top:3rem !important;
@@ -697,8 +698,8 @@
 
 @media only screen and (max-width: 600px) {
     .s-contact {
-        padding-top: 12rem;
-        padding-bottom: 0;
+        padding-top: 6rem;
+        padding-bottom: 8rem;
     }
     .contact__line {
         height: 14.4rem;

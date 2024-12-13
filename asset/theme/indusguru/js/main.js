@@ -314,6 +314,28 @@
             ]
         });
         
+        $('.trusted-by-slick').slick({
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            dots: false,
+            arrows: false,
+            responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 2,
+                },
+            },
+            ],
+        });
     
     };
     
