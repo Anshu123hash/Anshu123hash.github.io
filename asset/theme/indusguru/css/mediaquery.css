@@ -578,10 +578,10 @@
         margin: 0 12%;
     }
     .clients-testimonials .clients2 .slick-prev {
-        left: -100px;
+        left: -30px;
     }
     .clients-testimonials .clients2 .slick-next {
-        right: -100px;
+        right: -30px;
     }
 
 }
@@ -618,15 +618,15 @@
         
     }
     .clients-testimonials .clients2 .slick-arrow {
-        top: 330px;
+        top: 50%;
         bottom: 3rem;
         display:inline !important;
     }
     .clients-testimonials .clients2 .slick-prev {
-        left: 0;
+        left: -30px;
     }
     .clients-testimonials .clients2 .slick-next {
-        right: 0;
+        right: -30px;
     }
 }
 

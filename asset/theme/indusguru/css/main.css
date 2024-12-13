@@ -2286,6 +2286,27 @@ html.cl-loaded .home-content__main {
 .clients-testimonials .client2 {
     margin: 0 10%;
 }
+
+.clients-testimonials .client2 .card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+.clients-testimonials .client2 .card-inner::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1), transparent 50%);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    pointer-events: none;
+  }
 .clients-testimonials .testimonials p {
     font-family: "lora-regular", serif;
     font-size: 2.5rem;
@@ -2376,7 +2397,7 @@ html.cl-loaded .home-content__main {
 
 .clients-testimonials .clients2 .slick-arrow {
     position: absolute;
-    top: 7.2rem;
+    top: 50%;
     width: 66px;
     height: 66px;
     margin: 0;
@@ -2396,13 +2417,13 @@ html.cl-loaded .home-content__main {
 }
 
 .clients-testimonials .clients2 .slick-prev {
-    left: -80px;
+    left: -50px;
     color: white;
     background-image: url("https://st2.depositphotos.com/5266903/8456/v/950/depositphotos_84564784-stock-illustration-arrow-left-flat-white-color.jpg");
 }
 
 .clients-testimonials .clients2 .slick-next {
-    right: -80px;
+    right: -50px;
     color: white;
     background-image: url("https://st2.depositphotos.com/5266903/8456/v/450/depositphotos_84564790-stock-illustration-arrow-right-flat-white-color.jpg");
 }
@@ -2420,6 +2441,31 @@ html.cl-loaded .home-content__main {
     position: relative;
 
 }
+.our-domains row{
+    width: 100%;
+}
+.our-domains .card{
+    height: 310px;
+}
+
+.our-domains .card a.moreLink{
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    color:#399cbd;
+}
+
+
+.our-domains  .card a.moreLink span {
+        color: #0112B6;
+        font-weight: 600;
+        display: inline-block;
+        margin-right: 30px;
+        color:#399cbd;
+    }
+
 .trusted-by{
     background-color: white;
     padding-top: 6rem;
@@ -3830,10 +3876,13 @@ section.clientPage .mantra .card p {
     bottom: 0px;
 }
 
-main.clientPage .mantra .card p.footerQuote,
-.main.clientPage .mantra .card p.footerQuote,
-section.clientPage .mantra .card p.footerQuote {
+
+
+
+.mantra .card p.footerQuote {
     font-style: italic;
+    position: absolute;
+    bottom: 0px;
 }
 
 main.clientPage .mantra .card.active,
@@ -9601,7 +9650,7 @@ div.dataTables_wrapper div.dataTables_processing {
  }
 
 .mantra .card{
-    height:430px;
+    height:470px;
 }
 
 .scrollable-cards-section {
