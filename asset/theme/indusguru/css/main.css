@@ -2266,7 +2266,7 @@ html.cl-loaded .home-content__main {
 
 .clients-testimonials::before {
     content: "";
-    display: block;
+    display: none;
     height: 1px;
     width: 550px;
     background-color: rgba(0, 0, 0, 0.1);
