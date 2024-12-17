@@ -204,7 +204,32 @@
    /* slick slider
     * ------------------------------------------------------ */
     var clSlickSlider = function() {
-
+    
+        $('.scrollable-carousel').slick({
+            autoplay: false,          // Enable auto-play
+            autoplaySpeed: 3000,     // Speed of autoplay (3 seconds)
+            dots: true,              // Enable dots navigation
+            infinite: true,          // Infinite loop
+            speed: 600,              // Transition speed
+            slidesToShow: 3,         // Number of visible cards at once
+            slidesToScroll: 1, 
+            arrows:false,      // Cards to scroll at a time
+            responsive: [            // Make it responsive for different screens
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    
         $('.clients').slick({
             arrows: false,
             dots: true,
@@ -317,10 +342,11 @@
         $('.trusted-by-slick').slick({
             slidesToShow: 7,
             slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            dots: false,
+            autoplay: true,   
+            autoplaySpeed: 1000,
+            dots: true,
             arrows: false,
+            infinite: true, 
             responsive: [
             {
                 breakpoint: 768,
