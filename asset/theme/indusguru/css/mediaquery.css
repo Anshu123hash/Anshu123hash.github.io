@@ -67,6 +67,9 @@
     /* .card{
         height:440px !important;
     } */
+    .read-more{
+        margin-left:210px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -205,14 +208,26 @@
     .home-content__buttons {
         padding-top: 1.2rem;
         text-align: center;
+        margin-left:0;
+        display: flex; /* Align buttons in a row */
+        justify-content: center; /* Center the buttons horizontally */
+        gap: 10px; 
     }
     .home-content__buttons3{
         padding-bottom:20px !important;
         padding-top:20px !important;
         padding-left:3px;
     }
+    .scrollable-card2{
+        max-width:90%;
+        height:450px;
+    }
+    .scrollable-text2{
+        height:300px;
+    }
     .home-content__buttons3 .btn{
         width:160px;
+        padding:0;
     }
     .home-content__buttons .btn {
         display: block;
@@ -487,6 +502,9 @@
     .s-services {
         padding-top: 6rem;
         padding-bottom: 8rem;
+        padding-bottom: 8rem;
+        padding: 25px;
+        height: 1850px;
     }
     .trusted-by{
         padding-top:3rem !important;
@@ -523,14 +541,14 @@
     }
     .cl-testi{
         
-        height:1000px !important;
+        height:100px !important;
        
     }
     
     
     .co-testi{
         
-        height:1000px !important;
+        height:100px !important;
         
     
     }
@@ -698,8 +716,8 @@
 
 @media only screen and (max-width: 600px) {
     .s-contact {
-        padding-top: 6rem;
-        padding-bottom: 8rem;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
     }
     .contact__line {
         height: 14.4rem;
@@ -910,12 +928,15 @@
     }
   
     .scrollable-card {
-      flex: 0 0 80%; /* Show one card fully and a part of the next */
-      max-width: 80%;
+      flex: 0 0 90%; /* Show one card fully and a part of the next */
+      max-width: 90%;
     }
   
     .scroll-indicator {
       margin-top: 10px;
+    }
+    .our-domains .card{
+        height:350px !important;
     }
   }
 

@@ -1569,11 +1569,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__buttons {
     padding-top: 6rem;
-    text-align: left;
+    margin-left:160px;
 }
-.home-content__buttons3 {
+.testimonial-container {
+    display: flex; /* Aligns items in one line */
+    align-items: center; /* Vertically centers items */
+    gap: 3px; /* Adds space between image and text */
+  }
+/* .home-content__buttons3 {
     padding-top: 6rem;
-}
+} */
 .home-content__buttons2 {
     padding-top: 8rem;
     text-align: right;
@@ -1925,6 +1930,7 @@ html.cl-loaded .home-content__main {
     background-color: #399cbd;
     color: #757575;
     position: relative;
+    height:650px;
 
 }
 
@@ -2188,7 +2194,7 @@ html.cl-loaded .home-content__main {
 .cl-testi{
     padding-top: 4.2rem;
     position: relative;
-    height:800px;
+    height:110px;
     background-color:black;
 }
 
@@ -2196,7 +2202,7 @@ html.cl-loaded .home-content__main {
 .co-testi{
     padding-top: 4.2rem;
     position: relative;
-    height:800px;
+    height:110px;
     background-color:#399cbd;
 
 }
@@ -9442,10 +9448,10 @@ div.dataTables_wrapper div.dataTables_processing {
     border-radius: 50%;
     cursor: pointer;
     position: relative; /* Ensure it stays within the front card */
-    z-index: 10; /* Keeps it above the image */
+    z-index: 9999; /* Keeps it above the image */
     border:none;
 
-    margin-left:140px;
+    margin-left:260px;
 }
 /* Default style for the button */
 .read-more {
@@ -9650,7 +9656,7 @@ div.dataTables_wrapper div.dataTables_processing {
  }
 
 .mantra .card{
-    height:470px;
+    height:370px;
 }
 
 .scrollable-cards-section {
@@ -9685,10 +9691,30 @@ div.dataTables_wrapper div.dataTables_processing {
     flex-direction: column;
     scroll-snap-align: center;
     text-align: center;
-    height: 500px;
+    height: 550px;
+  }
+  .scrollable-card2 {
+    flex: 0 0 90%;
+    max-width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    text-align: center;
+    height: 450px;
   }
   
   .scrollable-card img {
+    width: 80px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .scrollable-card2 img {
     width: 80px;
     height: 70px;
     border-radius: 50%;
@@ -9700,14 +9726,35 @@ div.dataTables_wrapper div.dataTables_processing {
     margin-bottom: 10px;
     color: #333;
   }
+
+  .scrollable-card2 h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+
+
+
   
   .scrollable-text {
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+
+  .scrollable-text2 {
     height: 250px;
     overflow-y: auto;
     padding-right: 5px;
   }
   
   .scrollable-text p {
+    margin: 0;
+    color: #555;
+  }
+
+  .scrollable-text2 p {
     margin: 0;
     color: #555;
   }

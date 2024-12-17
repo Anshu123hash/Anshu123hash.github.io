@@ -326,12 +326,14 @@
                 breakpoint: 768,
                 settings: {
                 slidesToShow: 2,
+                autoplay:true,
                 },
             },
             {
                 breakpoint: 480,
                 settings: {
                 slidesToShow: 2,
+                autoplay:true,
                 },
             },
             ],
