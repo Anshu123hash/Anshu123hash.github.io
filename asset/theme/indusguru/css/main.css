@@ -9709,8 +9709,8 @@ div.dataTables_wrapper div.dataTables_processing {
   }
   
   .scrollable-card img {
-    width: 80px;
-    height: 70px;
+    width: 190px;
+    height: 80px;
     margin-bottom: 10px;
   }
 
@@ -9745,7 +9745,6 @@ div.dataTables_wrapper div.dataTables_processing {
 
   .scrollable-text2 {
     height: 250px;
-    overflow-y: auto;
     padding-right: 5px;
   }
   
