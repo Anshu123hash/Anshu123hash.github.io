@@ -1746,7 +1746,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: #39b54a;
+    color: #399cbd;
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -2466,8 +2466,8 @@ html.cl-loaded .home-content__main {
     color:#399cbd;
 }
 .read-more-btn{
-    height: 2.3rem;
-    padding: 2px 2px !important;
+    height: 2.5rem;
+    padding: 3px 2px !important;
 }
 
 
