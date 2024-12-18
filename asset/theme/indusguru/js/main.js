@@ -273,7 +273,7 @@
         
         $('.clients2').slick({
             arrows: true,
-            dots: true,
+            dots: false,
             infinite: true,
             slidesToShow: 3, // Default setting for large screens
             slidesToScroll: 1, // Adjusted for smoother scrolling
@@ -344,7 +344,7 @@
             slidesToScroll: 1,
             autoplay: true,   
             autoplaySpeed: 1000,
-            dots: true,
+            dots: false,
             arrows: false,
             infinite: true, 
             responsive: [
