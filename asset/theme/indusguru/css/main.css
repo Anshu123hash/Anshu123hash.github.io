@@ -1933,7 +1933,7 @@ html.cl-loaded .home-content__main {
     background-color: #399cbd;
     color: #757575;
     position: relative;
-    height:710px;
+    height:640px;
 
 }
 
@@ -9716,7 +9716,7 @@ div.dataTables_wrapper div.dataTables_processing {
 }
 
 .mantra .card{
-    height:440px;
+    height:370px;
 }
 
 /* Menu Styling */
@@ -9797,6 +9797,7 @@ div.dataTables_wrapper div.dataTables_processing {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding-bottom: 80px;
   }
   
   .cards-container {

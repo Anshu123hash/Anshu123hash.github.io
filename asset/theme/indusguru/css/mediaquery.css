@@ -228,7 +228,7 @@
     }
     .scrollable-card2{
         max-width:90%;
-        height:450px;
+        height:400px;
     }
     .scrollable-text2{
         height:300px;
@@ -932,6 +932,7 @@
       display: flex;
       justify-content: center;
       overflow: hidden;
+      padding-bottom: 50px !important;
     }
   
     .cards-container {
