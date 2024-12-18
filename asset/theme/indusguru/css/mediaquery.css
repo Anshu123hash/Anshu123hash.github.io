@@ -68,7 +68,7 @@
         height:440px !important;
     } */
     .read-more{
-        margin-left:150px;
+        margin-left:220px;
     }
 }
 
@@ -391,6 +391,10 @@
     .stats h5 {
         margin-top: 1.2rem;
     }
+    .QIA{
+        margin-top:0px !important;
+    
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -504,7 +508,7 @@
         padding-bottom: 8rem;
         padding-bottom: 8rem;
         padding: 25px;
-        height: 1850px;
+        height: 1790px;
     }
     .trusted-by{
         padding-top:3rem !important;

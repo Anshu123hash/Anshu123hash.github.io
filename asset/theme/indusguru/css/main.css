@@ -20,6 +20,10 @@ body {
     margin: 0;
     padding: 0;
 }
+.QIA{
+    margin-top:30px !important;
+
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -2450,7 +2454,7 @@ html.cl-loaded .home-content__main {
     width: 100%;
 }
 .our-domains .card{
-    height: 310px;
+    height: 340px;
 }
 
 .our-domains .card a.moreLink{
@@ -2460,6 +2464,10 @@ html.cl-loaded .home-content__main {
     display: flex;
     align-items: center;
     color:#399cbd;
+}
+.read-more-btn{
+    height: 2.3rem;
+    padding: 2px 2px !important;
 }
 
 
@@ -9441,7 +9449,7 @@ div.dataTables_wrapper div.dataTables_processing {
 }
 .read-more {
     /* display: inline-block; */
-    margin-top: 180px;
+    margin-top: 210px;
     padding: 8px 16px;
     /* background: #0112B6 !important; */
     color: #fff;
@@ -9452,7 +9460,7 @@ div.dataTables_wrapper div.dataTables_processing {
     z-index: 9999; /* Keeps it above the image */
     border:none;
 
-    margin-left:260px;
+    margin-left:280px;
 }
 /* Default style for the button */
 .read-more {
