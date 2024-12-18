@@ -2469,6 +2469,9 @@ html.cl-loaded .home-content__main {
     height: 2.5rem;
     padding: 3px 2px !important;
 }
+.card-back p{
+    font-size:17px !important;
+}
 
 
 .our-domains  .card a.moreLink span {

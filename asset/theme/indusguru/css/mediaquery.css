@@ -76,6 +76,8 @@
         margin-bottom: 10px;
         padding-bottom:20px;
     }
+
+    
 }
 
 @media only screen and (max-width: 400px) {
@@ -845,6 +847,9 @@
     }
     .footer-main .right {
         padding-left: 15px;
+    }
+    .card-back p{
+        font-size:14px !important;
     }
 }
 
