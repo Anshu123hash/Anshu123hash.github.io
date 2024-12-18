@@ -1578,7 +1578,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: flex; /* Aligns items in one line */
     align-items: center; /* Vertically centers items */
     gap: 3px; /* Adds space between image and text */
-  }
+}
+
+.footerq{
+    justify-content:center;
+}
+
 /* .home-content__buttons3 {
     padding-top: 6rem;
 } */
