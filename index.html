@@ -1421,41 +1421,6 @@
 
     </script>
     
-    
-    <script>
-        document.querySelectorAll('.read-more').forEach(button => {
-            button.addEventListener('click', () => {
-                const cardInner = button.closest('.card-inner');
-                // cardInner.classList.toggle('flip');
-    
-                // Update the button content based on the flip state
-                if (cardInner.classList.contains('flip')) {
-                    // button.innerHTML = `
-                    //     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    //         <path d="M12.768 20L14.178 18.59L8.598 13H20.768V11H8.598L14.178 5.41L12.768 4L4.768 12L12.768 20Z" fill="#0416B7"/>
-                    //     </svg>
-                        
-                    // `;
-                    button.innerHTML = `
-                        <svg width="25" height="25" style="margin-bottom:23px;" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.232 4L10.822 5.41L16.402 11H4.23199V13H16.402L10.822 18.59L12.232 20L20.232 12L12.232 4Z" fill="#000000"/>
-                        </svg>
-                        
-                    `;
-                    button.setAttribute('data-state', 'back');
-                } else {
-                    button.innerHTML = `
-                        <svg width="25" height="25"  style="margin-bottom:23px;"  viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.232 4L10.822 5.41L16.402 11H4.23199V13H16.402L10.822 18.59L12.232 20L20.232 12L12.232 4Z" fill="#000000"/>
-                        </svg>
-                        
-                    `;
-                    button.removeAttribute('data-state');
-                }
-            });
-        });
-
-    </script>
 
     <script>
             function toggleBeyondWork(event) {
@@ -1482,12 +1447,29 @@
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.card-inner').forEach(card => {
                 card.addEventListener('click', () => {
-                    
-                card.classList.toggle('flipped');
+                    // const cardInner = button.closest('.card-inner');
+                    card.classList.toggle('flip');
+                    var button = card.closest('.read-more');
+                    // Update the button content based on the flip state
+                    if (card.classList.contains('flip')) {
+                        button.innerHTML = `
+                            <svg width="25" height="25" style="margin-bottom:23px;" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.232 4L10.822 5.41L16.402 11H4.23199V13H16.402L10.822 18.59L12.232 20L20.232 12L12.232 4Z" fill="#000000"/>
+                            </svg>
+                            
+                        `;
+                        button.setAttribute('data-state', 'back');
+                    } else {
+                        button.innerHTML = `
+                            <svg width="25" height="25"  style="margin-bottom:23px;"  viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.232 4L10.822 5.41L16.402 11H4.23199V13H16.402L10.822 18.59L12.232 20L20.232 12L12.232 4Z" fill="#000000"/>
+                            </svg>
+                            
+                    `;
+                    button.removeAttribute('data-state');
+                }   
                 
-                    
-                });
-                
+                });  
             });
         });
 
