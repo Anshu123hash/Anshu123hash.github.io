@@ -85,7 +85,7 @@
 
         // close menu clicking outside the menu itself
         siteBody.on('click', function(e){
-            if( !$(e.target).is('.header-nav, .header-nav__content, .header-menu-toggle, .header-menu-toggle span') ) {
+            if( !$(e.target).is('.header-nav, .header-nav__content, .header-menu-toggle, .header-menu-toggle span, .header-nav__list li, .plus-sign') ) {
                 // menuTrigger.removeClass('is-clicked');
                 siteBody.removeClass('menu-is-open');
             }

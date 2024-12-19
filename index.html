@@ -54,7 +54,7 @@
                     <span class="header-menu-icon"></span> 
                 </a>
             </div>
-        <nav class="header-nav"><a href="" class="header-nav__close"
+            <nav class="header-nav"><a href="" class="header-nav__close"
                 title="close"><span>Close</span></a>
             <div class="header-nav__content">
                 <script type="text/javascript"
@@ -65,11 +65,9 @@
                         src="indusguru.in" alt="Homepage"></noscript>
                 
                 <ul class="header-nav__list">
-                    <!-- <li class="current"><a class="smoothscroll" href="/#home"
-                            title="home">Beyond Work</a></li><br> -->
-                    <li class="current" id="beyondWorkToggle">
-                        <a class="" href="#" title="home">Beyond Work</a>
-                        <span class="plus-sign" onclick="toggleBeyondWork(event)">+</span>
+                    <li class="current toggle-dropdown" id="beyondWorkToggle">
+                        <a class="" href="#" onclick="toggleBeyondWork(event)" title="home">Beyond Work <span class="plus-sign ml-2">+</span></a>
+                        
                         <!-- Submenu to Show/Hide -->
                         <ul class="submenu" id="beyondWorkSubmenu" style="display: none;">
                             <li><a class=" text-black m-0" href="https://www.indusguru.in/beyondwork" title="about">About Beyond Work</a></li>
@@ -80,22 +78,7 @@
                             <li><a class="text-black m-0" href="https://www.indusguru.in/expert-speak" title="clients">Expert-speak</a></li>
                         </ul>
                     </li>
-                    <div class="dropdown">
-
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Beyond Work
-                          </button>
-                        <div class="dropdown-menu text-black" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item text-black" href="https://www.indusguru.in/beyondwork">About Beyond Work</a>
-                          <a class="dropdown-item text-black" href="https://www.indusguru.in/upskilling">Upskilling</a>
-                          <a class="dropdown-item text-black" href="https://www.indusguru.in/beyondwork/events">Events/Networking</a>
-                          <a class="dropdown-item text-black" href="https://www.indusguru.in/beyondwork/freelancer-support">Freelancer Support</a>
-                          <a class="dropdown-item text-black" href="https://www.indusguru.in/indusguru-research">IndsuGuru Research</a>
-                          <a class="dropdown-item text-black" href="https://www.indusguru.in/expert-speak">Expert - Speak</a>
-                        </div>
-                    </div>
                     
-                        
                         
                     <li><a class="" href="https://www.indusguru.in/profiles/illustrative" title="about">Illustrative Profiles</a></li><br>
                     <li><a class="" href="https://www.indusguru.in/caseStudiesPage"
@@ -108,7 +91,6 @@
                     <li><a class="" href="https://www.indusguru.in/contact" title="contact">Post Enquiry</a>
                     </li><br>
                 </ul>
-                
                 <!-- <ul class="header-nav__social">
                     <li> <a href="/#"><i class="fa fa-facebook"></i></a></li>
                     <li> <a href="/#"><i class="fa fa-twitter"></i></a></li>
@@ -1477,21 +1459,21 @@
 
     <script>
             function toggleBeyondWork(event) {
-            event.stopPropagation(); // Prevent event bubbling
-            event.preventDefault();  // Prevent default behavior
+            event.stopPropagation();
+            event.preventDefault();
 
             const submenu = document.getElementById("beyondWorkSubmenu");
             const plusSign = document.querySelector("#beyondWorkToggle .plus-sign");
 
             // Toggle submenu display and apply styles
             if (submenu.classList.contains("visible")) {
-                submenu.classList.remove("visible"); // Remove visible styles
+                submenu.classList.remove("visible");
                 submenu.style.display = "none";
-                plusSign.textContent = "+"; // Change back to "+"
+                plusSign.textContent = "+";
             } else {
-                submenu.classList.add("visible"); // Add visible styles
+                submenu.classList.add("visible");
                 submenu.style.display = "block";
-                plusSign.textContent = "−"; // Change "+" to "−"
+                plusSign.textContent = "−";
             }
         }
 
