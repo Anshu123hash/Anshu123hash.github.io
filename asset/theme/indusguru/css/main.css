@@ -1563,7 +1563,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
-    margin-top: 180px;
 }
 
 .home-content__main {
@@ -1573,6 +1572,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__buttons {
     padding-top: 6rem;
+    margin-left:160px;
 }
 .testimonial-container {
     display: flex; /* Aligns items in one line */
@@ -1780,14 +1780,10 @@ html.cl-preload .home-content__main {
 }
 
 html.cl-loaded .home-content__main {
-    animation-duration: 3s;
-    animation-delay: 3s;
+    animation-duration: 2s;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-          
 }
-
-
 
 
 /* ------------------------------------------------------------------- 
@@ -1796,14 +1792,6 @@ html.cl-loaded .home-content__main {
 
 
 /* fade in */
-@keyframes fadeIn {
-    0% {
-        opacity: 0; /* Invisible at the start */
-    }
-    100% {
-        opacity: 1; /* Fully visible at the end */
-    }
-}
 
 @-webkit-keyframes fadeIn {
     from {
