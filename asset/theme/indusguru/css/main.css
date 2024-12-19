@@ -1579,7 +1579,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     /* animation-name: fadeIn; */
     opacity: 0;               /* Initially hidden */
     visibility: hidden;       /* Prevents interaction before animation */
-    animation: fadeIn 5s ease-in-out 4s forwards; 
+    animation: fadeIn 5s ease-in-out 6s forwards; 
 }
 .testimonial-container {
     display: flex; /* Aligns items in one line */
