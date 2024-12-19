@@ -88,6 +88,11 @@
             if( !$(e.target).is('.header-nav, .header-nav__content, .header-menu-toggle, .header-menu-toggle span, .header-nav__list li, .plus-sign') ) {
                 // menuTrigger.removeClass('is-clicked');
                 siteBody.removeClass('menu-is-open');
+                const plusSign = document.querySelector("#beyondWorkToggle .plus-sign");
+                plusSign.textContent = "+";
+                const submenu = document.getElementById("beyondWorkSubmenu");
+                submenu.classList.remove("visible");
+                submenu.style.display = "none";
             }
         });
 
