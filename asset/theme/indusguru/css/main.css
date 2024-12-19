@@ -1521,6 +1521,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    animation-delay:1s;
     
 }
 
@@ -1579,7 +1580,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     /* animation-name: fadeIn; */
     opacity: 0;               /* Initially hidden */
     visibility: hidden;       /* Prevents interaction before animation */
-    animation: fadeIn 5s ease-in-out 6s forwards; 
+    animation: fadeIn 3s ease-in-out 3s forwards; 
 }
 .testimonial-container {
     display: flex; /* Aligns items in one line */
@@ -1793,7 +1794,7 @@ html.cl-loaded .home-content__main {
     /* animation-name: fadeIn; */
     opacity: 0;               /* Initially hidden */
     visibility: hidden;       /* Prevents interaction before animation */
-    animation: fadeIn 5s ease-in-out 4s forwards; /* Includes delay and forwards */
+    animation: fadeIn 3s ease-in-out 2s forwards; /* Includes delay and forwards */
 
 }
 @keyframes fadeIn {
@@ -9898,7 +9899,7 @@ div.dataTables_wrapper div.dataTables_processing {
 
   
   .scrollable-text {
-    height: 240px;
+    height: 300px;
     overflow-y: auto;
     padding-right: 5px;
   }

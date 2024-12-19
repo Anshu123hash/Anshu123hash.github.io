@@ -943,7 +943,9 @@
     .scrollable-card {
       flex: 0 0 90%; /* Show one card fully and a part of the next */
       max-width: 90%;
+      height:480px;
     }
+    
   
     .scroll-indicator {
       margin-top: 10px;
