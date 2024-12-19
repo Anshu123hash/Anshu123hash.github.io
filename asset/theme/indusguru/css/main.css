@@ -1310,8 +1310,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 36px;
-    right: 30px;
+    top: 25px;
+    right: 3px;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
@@ -1561,7 +1561,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-family: "montserrat-medium", sans-serif;
     font-size: 6.3rem;
     line-height: 1.333;
-    margin-top: 0;
+    margin-top: 200px;
     color: #FFFFFF;
 }
 
@@ -1571,8 +1571,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__buttons {
-    padding-top: 6rem;
+    padding-top: 4rem;
     margin-left:160px;
+    /* animation-delay:5s;
+    animation-duration: 2s; */
+    -webkit-animation-name: fadeIn;
+    /* animation-name: fadeIn; */
+    opacity: 0;               /* Initially hidden */
+    visibility: hidden;       /* Prevents interaction before animation */
+    animation: fadeIn 5s ease-in-out 4s forwards; 
 }
 .testimonial-container {
     display: flex; /* Aligns items in one line */
@@ -1780,9 +1787,23 @@ html.cl-preload .home-content__main {
 }
 
 html.cl-loaded .home-content__main {
-    animation-duration: 2s;
+    /* animation-delay:5s;
+    animation-duration: 2s; */
     -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+    /* animation-name: fadeIn; */
+    opacity: 0;               /* Initially hidden */
+    visibility: hidden;       /* Prevents interaction before animation */
+    animation: fadeIn 5s ease-in-out 4s forwards; /* Includes delay and forwards */
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;  /* Ensures visibility */
+    }
 }
 
 
@@ -1805,6 +1826,7 @@ html.cl-loaded .home-content__main {
         -webkit-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        visibility:visible;
     }
 }
 
@@ -1820,6 +1842,7 @@ html.cl-loaded .home-content__main {
         -webkit-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        visibility:visible;
     }
 }
 
@@ -9828,7 +9851,7 @@ div.dataTables_wrapper div.dataTables_processing {
     flex-direction: column;
     scroll-snap-align: center;
     text-align: center;
-    height: 550px;
+    height: 380px;
   }
   .scrollable-card2 {
     flex: 0 0 90%;
@@ -9842,7 +9865,7 @@ div.dataTables_wrapper div.dataTables_processing {
     flex-direction: column;
     scroll-snap-align: center;
     text-align: center;
-    height: 450px;
+    height: 400px;
   }
   
   .scrollable-card img {
@@ -9875,13 +9898,13 @@ div.dataTables_wrapper div.dataTables_processing {
 
   
   .scrollable-text {
-    height: 350px;
+    height: 240px;
     overflow-y: auto;
     padding-right: 5px;
   }
 
   .scrollable-text2 {
-    height: 250px;
+    height: 200px;
     padding-right: 5px;
   }
   
