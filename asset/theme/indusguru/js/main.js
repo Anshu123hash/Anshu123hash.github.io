@@ -482,7 +482,6 @@
             easing: 'ease-in-sine',
             delay: 300,
             once: true,
-            disable: 'mobile'
         });
 
     };

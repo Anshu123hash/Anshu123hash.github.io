@@ -1520,7 +1520,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
     animation-delay:1s;
     
 }
@@ -1795,6 +1794,8 @@ html.cl-loaded .home-content__main {
     opacity: 0;               /* Initially hidden */
     visibility: hidden;       /* Prevents interaction before animation */
     animation: fadeIn 3s ease-in-out 2s forwards; /* Includes delay and forwards */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bolder;
 
 }
 @keyframes fadeIn {
