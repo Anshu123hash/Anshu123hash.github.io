@@ -2267,7 +2267,7 @@ html.cl-loaded .home-content__main {
     position: relative;
     margin-bottom:100px;
 }
-.cl-testi{
+/* .cl-testi{
     padding-top: 4.2rem;
     position: relative;
     height:110px;
@@ -2281,7 +2281,7 @@ html.cl-loaded .home-content__main {
     height:110px;
     background-color:#399cbd;
 
-}
+} */
   
   .clients-section22 h2 {
     font-size: 24px;
@@ -9822,12 +9822,22 @@ div.dataTables_wrapper div.dataTables_processing {
 
 .scrollable-cards-section {
     padding: 20px;
-    background-color: black;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     padding-bottom: 80px;
+  }
+  .cl-testimonials{
+    background-color: black !important;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+  .consultant-testimonials{
+    background-color: #399cbd;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
   }
   
   .cards-container {
