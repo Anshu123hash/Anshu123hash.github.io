@@ -92,7 +92,7 @@
                 plusSign.textContent = "+";
                 const submenu = document.getElementById("beyondWorkSubmenu");
                 submenu.classList.remove("visible");
-                submenu.style.display = "none";
+                submenu.style.display = "none";git 
             }
         });
 
