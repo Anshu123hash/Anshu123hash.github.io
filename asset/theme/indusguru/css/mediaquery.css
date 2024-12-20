@@ -234,6 +234,9 @@
     .scrollable-text2{
         height:300px;
     }
+    .scrollable-text{
+        height:350px;
+    }
     .home-content__buttons3 .btn{
         width:160px;
         padding:0;
@@ -943,7 +946,9 @@
     .scrollable-card {
       flex: 0 0 90%; /* Show one card fully and a part of the next */
       max-width: 90%;
+      height:500px;
     }
+
   
     .scroll-indicator {
       margin-top: 10px;
